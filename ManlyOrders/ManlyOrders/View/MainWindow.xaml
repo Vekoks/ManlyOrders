@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:ManlyOrders"
         mc:Ignorable="d"
         Title="Manly" Height="350" Width="525" Closing="Window_Closing"
-        WindowStartupLocation="CenterScreen"
-        Icon="Resources/manly.png">
+        WindowStartupLocation="CenterScreen">
     <Window.Background>
-        <ImageBrush ImageSource="Resources/manly.png"/>
+        <ImageBrush/>
     </Window.Background>
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Resources/manly.png"/>
+            <ImageBrush ImageSource="/ManlyOrders;component/Resources/manly.png"/>
         </Grid.Background>
+
 
         <Button x:Name="buttonAdd" Content="Добави" HorizontalAlignment="Left" Margin="219,154,0,0" VerticalAlignment="Top" Width="75" Click="buttonAdd_Click" RenderTransformOrigin="-0.013,3.318" Height="22"/>
         <TextBox x:Name="textBoxBarcode" HorizontalAlignment="Left" Height="23" Margin="89,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2"/>

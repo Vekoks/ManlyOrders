@@ -58,6 +58,8 @@ namespace ManlyOrders
 
         private void buttonResult_Click(object sender, RoutedEventArgs e)
         {
+            OrderService.GetSteels(listRecording);
+
             var resultWindow = new ResultWindow(listRecording);
             resultWindow.Show();
         }

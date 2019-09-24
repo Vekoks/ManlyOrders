@@ -42,3 +42,25 @@ C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj
 C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.g.resources
 C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.Properties.Resources.resources
 C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csproj.GenerateResource.Cache
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.exe.config
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.exe
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.pdb
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.exe
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.pdb
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.Charting.dll
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.dll
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.xml
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.Charting.xml
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\de\PdfSharp.resources.dll
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\App.g.cs
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders_MarkupCompile.cache
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders_MarkupCompile.lref
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.g.resources
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.Properties.Resources.resources
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csproj.GenerateResource.Cache
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\ResultWindow.g.cs
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\ResultWindow.baml
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\MainWindow.g.cs
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\MainWindow.baml
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csprojResolveAssemblyReference.cache

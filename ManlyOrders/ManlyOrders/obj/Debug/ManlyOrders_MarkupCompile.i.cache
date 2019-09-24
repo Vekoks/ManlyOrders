@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\
 ManlyOrders
 none
 false
 DEBUG;TRACE
-C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\App.xaml
-2563140763
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\App.xaml
+2-1551511842
 
-13-693745594
-16-1941640597
-MainWindow.xaml;ResultWindow.xaml;
+14-449942190
+16342193464
+View\MainWindow.xaml;View\ResultWindow.xaml;
 
-True
+False
 

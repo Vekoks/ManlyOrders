@@ -130,5 +130,160 @@ namespace ManlyOrders.Service
 
             MessageBox.Show("Успешен запис на файл");
         }
+
+        public static List<Knife> GetSteels(List<Recording> listRecording)
+        {
+            var listKnifeAndSteel = new List<Knife>();
+
+            for (int i = 0; i < listRecording.Count(); i++)
+            {
+                var currentFullNameRecord = listRecording[i].Record.Split(' ');
+
+                var currentNameKnife = currentFullNameRecord[0];
+
+                var currentNameSteel = GetSteelFromRecord(currentFullNameRecord);
+
+                var currentModelBlade= GetModelBladeFromRecord(currentFullNameRecord);
+
+                var currentNumber = listRecording[i].Number;
+
+                var findKnife = false;
+
+                for (int j = 0; j < listKnifeAndSteel.Count; j++)
+                {
+                    if (listKnifeAndSteel[j].Name.Equals(currentNameKnife))
+                    {
+                        if (listKnifeAndSteel[j].OneHand && currentModelBlade.Equals("ONE"))
+                        {
+                            AddNumberOnSpecificSteel(currentNameSteel, listKnifeAndSteel[j], currentNumber);
+                            findKnife = true;
+                            break;
+                        }
+
+                        else if (listKnifeAndSteel[j].TwoHand && currentModelBlade.Equals("TWO"))
+                        {
+                            AddNumberOnSpecificSteel(currentNameSteel, listKnifeAndSteel[j], currentNumber);
+                            findKnife = true;
+                            break;
+                        }
+                        else if(!listKnifeAndSteel[j].OneHand && !listKnifeAndSteel[j].TwoHand)
+                        {
+                            AddNumberOnSpecificSteel(currentNameSteel, listKnifeAndSteel[j], currentNumber);
+                            findKnife = true;
+                            break;
+                        }
+                    }
+                }
+                
+                if (currentModelBlade.Equals("ONE") && !findKnife)
+                {
+                    var currentKnife = new Knife
+                    {
+                        Name = currentNameKnife,
+                        OneHand = true
+                    };
+
+                    AddNumberOnSpecificSteel(currentNameSteel, currentKnife, currentNumber);
+                    listKnifeAndSteel.Add(currentKnife);
+                }
+
+                if (currentModelBlade.Equals("TWO") && !findKnife)
+                {
+
+                    var currentKnife = new Knife
+                    {
+                        Name = currentNameKnife,
+                        TwoHand = true
+                    };
+
+                    AddNumberOnSpecificSteel(currentNameSteel, currentKnife, currentNumber);
+                    listKnifeAndSteel.Add(currentKnife);
+                }
+
+                if (!findKnife && !currentModelBlade.Equals("TWO") && !currentModelBlade.Equals("ONE"))
+                {
+
+                    var currentKnife = new Knife
+                    {
+                        Name = currentNameKnife,
+                    };
+
+                    AddNumberOnSpecificSteel(currentNameSteel, currentKnife, currentNumber);
+                    listKnifeAndSteel.Add(currentKnife);
+                }
+
+
+                if (listKnifeAndSteel.Count() == 0)
+                {
+                    var currentKnife = new Knife
+                    {
+                        Name = currentNameKnife
+                    };
+
+                    if (currentModelBlade.Equals("ONE"))
+                    {
+                        currentKnife.OneHand = true;
+                    }
+                    else if (currentModelBlade.Equals("TWO"))
+                    {
+                        currentKnife.TwoHand = true;
+                    }
+   
+                    AddNumberOnSpecificSteel(currentNameSteel, currentKnife, currentNumber);
+
+                    listKnifeAndSteel.Add(currentKnife);
+                } 
+            }
+
+            return listKnifeAndSteel;
+        }
+
+        private static string GetSteelFromRecord(String[] record)
+        {
+            for (int i = 0; i < record.Count(); i++)
+            {
+                switch (record[i])
+                {
+                    case "D2": return "D2";
+                    case "CPM154": return "CPM154";
+                    case "S90V": return "S90V";
+                    case "12C27": return "12C27";
+                    case "14C28N": return "14C28N";
+                    default:
+                        break;
+                }
+            }
+            return "";
+        }
+
+        private static string GetModelBladeFromRecord(String[] record)
+        {
+            for (int i = 0; i < record.Count(); i++)
+            {
+                switch (record[i])
+                {
+                    case "TWO": return "TWO";
+                    case "ONE": return "ONE";
+                    default:
+                        break;
+                }
+            }
+
+            return "";
+        }
+
+        private static void AddNumberOnSpecificSteel(string nameSteel, Knife knife, int number)
+        {
+            switch (nameSteel)
+            {
+                case "D2": knife.D2 += number; break;
+                case "CPM154": knife.CPM154 += number; break;
+                case "S90V": knife.S90V += number; break;
+                case "12C27": knife._12C27 += number; break;
+                case "14C28N": knife._14C28 += number; break;
+                default:
+                    break;
+            }
+        }
     }
 }
