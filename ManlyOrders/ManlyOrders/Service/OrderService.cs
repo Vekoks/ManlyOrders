@@ -211,28 +211,6 @@ namespace ManlyOrders.Service
                     AddNumberOnSpecificSteel(currentNameSteel, currentKnife, currentNumber);
                     listKnifeAndSteel.Add(currentKnife);
                 }
-
-
-                if (listKnifeAndSteel.Count() == 0)
-                {
-                    var currentKnife = new Knife
-                    {
-                        Name = currentNameKnife
-                    };
-
-                    if (currentModelBlade.Equals("ONE"))
-                    {
-                        currentKnife.OneHand = true;
-                    }
-                    else if (currentModelBlade.Equals("TWO"))
-                    {
-                        currentKnife.TwoHand = true;
-                    }
-   
-                    AddNumberOnSpecificSteel(currentNameSteel, currentKnife, currentNumber);
-
-                    listKnifeAndSteel.Add(currentKnife);
-                } 
             }
 
             return listKnifeAndSteel;
