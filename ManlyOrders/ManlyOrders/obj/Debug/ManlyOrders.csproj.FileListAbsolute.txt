@@ -1,0 +1,44 @@
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.exe.config
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.exe
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.pdb
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csprojResolveAssemblyReference.cache
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\MainWindow.g.cs
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\App.g.cs
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders_MarkupCompile.cache
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders_MarkupCompile.lref
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\MainWindow.baml
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.g.resources
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.Properties.Resources.resources
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csproj.GenerateResource.Cache
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.exe
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.pdb
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ResultWindow.g.cs
+D:\Visual Studio\ManlyOrders\ManlyOrders\obj\Debug\ResultWindow.baml
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.Charting.dll
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.dll
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.xml
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.Charting.xml
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\de\PdfSharp.resources.dll
+D:\Visual Studio\ManlyOrders\ManlyOrders\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.exe.config
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.exe
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.pdb
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.exe
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\ManlyOrders.pdb
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.Charting.dll
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.dll
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.xml
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\PdfSharp.Charting.xml
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csprojResolveAssemblyReference.cache
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\MainWindow.g.cs
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ResultWindow.g.cs
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\App.g.cs
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders_MarkupCompile.cache
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders_MarkupCompile.lref
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\MainWindow.baml
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ResultWindow.baml
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.g.resources
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.Properties.Resources.resources
+C:\Users\devil\Documents\Visual Studio 2015\Projects\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csproj.GenerateResource.Cache
