@@ -1,5 +1,6 @@
 ﻿using ManlyOrders.Models;
 using ManlyOrders.Service;
+using ManlyOrders.View;
 using Microsoft.Win32;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
@@ -66,11 +67,6 @@ namespace ManlyOrders
             resultWindow.Show();
         }
 
-        private void buttonSaveFile_Click(object sender, RoutedEventArgs e)
-        {
-            OrderService.SaveRecord(listRecording);
-        }
-
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             string msg = "Наистина ли искате да излезете, защото информацията ще се загуби?";
@@ -80,8 +76,19 @@ namespace ManlyOrders
             if (result == MessageBoxResult.No)
             {
                 e.Cancel = true;
-            }
-            
+            } 
+        }
+
+        private void buttonResulthandle_Click(object sender, RoutedEventArgs e)
+        {
+            var resultWindow = new ResultHandleWindow(listRecording);
+            resultWindow.Show();
+        }
+
+        private void buttonResultSteel_Click(object sender, RoutedEventArgs e)
+        {
+            var resultWindow = new ResultSteelWindows(listRecording);
+            resultWindow.Show();
         }
     }
 }

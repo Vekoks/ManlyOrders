@@ -1,0 +1,18 @@
+﻿<Window x:Class="ManlyOrders.View.ResultSteelWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManlyOrders.View"
+        mc:Ignorable="d"
+        Title="Manly" Height="350" Width="560"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ManlyOrders;component/Resources/manly.png"/>
+        </Grid.Background>
+        <ListBox x:Name="listBoxKnifeSteel" HorizontalAlignment="Left" Height="224" Margin="10,41,0,0" VerticalAlignment="Top" Width="522"/>
+        <Button x:Name="buttonSaveFile" Content="Запиши" HorizontalAlignment="Left" Margin="232,279,0,0" VerticalAlignment="Top" Width="75" Click="buttonSaveFile_Click"/>
+        <Label x:Name="labelKnifeSteel" Content="Брой и вид остриета" HorizontalAlignment="Left" Margin="200,7,0,0" VerticalAlignment="Top" FontSize="14" Background="#FFE8E8E8"/>
+    </Grid>
+</Window>

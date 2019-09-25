@@ -1,4 +1,5 @@
 ﻿using ManlyOrders.Models;
+using ManlyOrders.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,8 @@ namespace ManlyOrders
     /// </summary>
     public partial class ResultWindow : Window
     {
+        private List<Recording> listRecord;
+
         public ResultWindow(List<Recording> listRecording)
         {
             InitializeComponent();
@@ -30,7 +33,13 @@ namespace ManlyOrders
 
                 listBoxItams.Items.Add(currentLine);
             }
-            
+
+            listRecord = listRecording;
+        }
+
+        private void buttonSaveFile_Click(object sender, RoutedEventArgs e)
+        {
+            OrderService.SaveRecord(listRecord);
         }
     }
 }

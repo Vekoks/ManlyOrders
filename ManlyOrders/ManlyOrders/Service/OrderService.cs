@@ -216,7 +216,7 @@ namespace ManlyOrders.Service
             return listKnifeAndSteel;
         }
 
-        public static void GetHandles(List<Recording> listRecording)
+        public static List<Handle> GetHandles(List<Recording> listRecording)
         {
             var listHandles = new List<Handle>();
 
@@ -254,6 +254,8 @@ namespace ManlyOrders.Service
                     listHandles.Add(currentHandle);
                 }
             }
+
+            return listHandles;
         }
 
         private static string GetHandleColorFromRecord(String[] record)
