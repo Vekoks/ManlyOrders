@@ -258,6 +258,56 @@ namespace ManlyOrders.Service
             return listHandles;
         }
 
+        public static List<String> GetHandlesReadyForView(List<Handle> listHandle)
+        {
+            var listStringForView = new List<string>();
+
+            var knifeWrited = false;
+
+            for (int i = 0; i < listHandle.Count; i++)
+            {
+                for (int k = 0; k < listStringForView.Count(); k++)
+                {
+                    var currentStrinPLsit = listStringForView[k].Split(' ');
+
+                    if (currentStrinPLsit[0].Equals(listHandle[i].NameKnife))
+                    {
+                        knifeWrited = true;
+                        break;
+                    }
+                }
+
+
+                if (knifeWrited)
+                {
+                    knifeWrited = false;
+                    continue;
+                }
+
+                var currentLine = "";
+
+                currentLine = listHandle[i].NameKnife + " ".PadRight(5) + listHandle[i].HandleColor + "->" + listHandle[i].Count.ToString() + " ".PadRight(5);
+
+                for (int j = i + 1; j < listHandle.Count(); j++)
+                {
+                    if (listHandle[i].NameKnife.Equals(listHandle[j].NameKnife))
+                    {
+                        currentLine += listHandle[j].HandleColor + "->" + listHandle[j].Count.ToString() + " ".PadRight(5);
+                    }
+                }
+
+                listStringForView.Add(currentLine);
+
+                currentLine = new string('-', 40);
+
+                listStringForView.Add(currentLine);
+            }
+
+
+            return listStringForView;
+        }
+
+
         private static string GetHandleColorFromRecord(String[] record)
         {
             for (int i = 0; i < record.Count(); i++)

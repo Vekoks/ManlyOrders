@@ -29,16 +29,11 @@ namespace ManlyOrders.View
 
             listHandle = OrderService.GetHandles(listRecording);
 
+            var listStringForView =  OrderService.GetHandlesReadyForView(listHandle);
 
-             for (int i = 0; i < listHandle.Count; i++)
+            for (int i = 0; i < listStringForView.Count(); i++)
             {
-                var currentLine = listHandle[i].NameKnife + " ".PadRight(5) + listHandle[i].HandleColor + " ".PadRight(5) + listHandle[i].Count.ToString() + " ".PadRight(5);
-
-                listBoxHandles.Items.Add(currentLine);
-
-                currentLine = new string('-', 40);
-
-                listBoxHandles.Items.Add(currentLine);
+                listBoxHandles.Items.Add(listStringForView[i]);
             }
         }
     }

@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ManlyOrders.View"
         mc:Ignorable="d"
-        Title="Manly" Height="320" Width="350"
+        Title="Manly" Height="320" Width="500"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/ManlyOrders;component/Resources/manly.png"/>
         </Grid.Background>
-        <ListBox x:Name="listBoxHandles" HorizontalAlignment="Left" Height="208" Margin="33,40,0,0" VerticalAlignment="Top" Width="268"/>
-        <Label x:Name="labelHandle" Content="Брой чирени" HorizontalAlignment="Left" Margin="119,5,0,0" VerticalAlignment="Top" FontSize="14" Background="#FFE8E8E8"/>
-        <Button x:Name="buttonСажеФиле" Content="Запази" HorizontalAlignment="Left" Margin="128,255,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="listBoxHandles" HorizontalAlignment="Left" Height="208" Margin="23,42,0,0" VerticalAlignment="Top" Width="442"/>
+        <Label x:Name="labelHandle" Content="Брой чирени" HorizontalAlignment="Left" Margin="191,10,0,0" VerticalAlignment="Top" FontSize="14" Background="#FFE8E8E8"/>
+        <Button x:Name="buttonСажеФиле" Content="Запази" HorizontalAlignment="Left" Margin="210,255,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
