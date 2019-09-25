@@ -67,6 +67,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Handle.cs" />
     <Compile Include="Models\Knife.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Recording.cs" />

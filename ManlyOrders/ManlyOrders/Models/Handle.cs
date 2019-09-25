@@ -8,7 +8,7 @@ namespace ManlyOrders.Models
 {
     public class Handle
     {
-        public string NmaeKnife { get; set; }
+        public string NameKnife { get; set; }
 
         public string HandleColor { get; set; }
 

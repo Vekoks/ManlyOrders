@@ -216,6 +216,62 @@ namespace ManlyOrders.Service
             return listKnifeAndSteel;
         }
 
+        public static void GetHandles(List<Recording> listRecording)
+        {
+            var listHandles = new List<Handle>();
+
+            for (int i = 0; i < listRecording.Count(); i++)
+            {
+                var currentFullNameRecord = listRecording[i].Record.Split(' ');
+
+                var currentNameKnife = currentFullNameRecord[0];
+
+                var currentHandleColor = GetHandleColorFromRecord(currentFullNameRecord);
+
+                var currentNumber = listRecording[i].Number;
+
+                var findHandle = false;
+
+                for (int j = 0; j < listHandles.Count(); j++)
+                {
+                    if (listHandles[j].NameKnife.Equals(currentNameKnife) && listHandles[j].HandleColor.Equals(currentHandleColor))
+                    {
+                        listHandles[j].Count += currentNumber;
+                        findHandle = true;
+                        break;
+                    }
+                }
+
+                if (!findHandle)
+                {
+                    var currentHandle = new Handle
+                    {
+                        NameKnife = currentNameKnife,
+                        HandleColor = currentHandleColor,
+                        Count = currentNumber
+                    };
+
+                    listHandles.Add(currentHandle);
+                }
+            }
+        }
+
+        private static string GetHandleColorFromRecord(String[] record)
+        {
+            for (int i = 0; i < record.Count(); i++)
+            {
+                switch (record[i])
+                {
+                    case "MILITARY": return "MILITARY GREEN";
+                    case "DESERT": return "DESERT IRONWOOD";
+                    default:
+                        break;
+                }
+            }
+
+            return record[1];
+        }
+
         private static string GetSteelFromRecord(String[] record)
         {
             for (int i = 0; i < record.Count(); i++)
@@ -224,7 +280,7 @@ namespace ManlyOrders.Service
                 {
                     case "D2": return "D2";
                     case "CPM154": return "CPM154";
-                    case "S90V": return "S90V";
+                    case "CPMS90V": return "CPMS90V";
                     case "12C27": return "12C27";
                     case "14C28N": return "14C28N";
                     default:
@@ -256,7 +312,7 @@ namespace ManlyOrders.Service
             {
                 case "D2": knife.D2 += number; break;
                 case "CPM154": knife.CPM154 += number; break;
-                case "S90V": knife.S90V += number; break;
+                case "CPMS90V": knife.CPMS90V += number; break;
                 case "12C27": knife._12C27 += number; break;
                 case "14C28N": knife._14C28 += number; break;
                 default:

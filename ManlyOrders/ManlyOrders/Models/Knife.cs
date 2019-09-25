@@ -14,7 +14,7 @@ namespace ManlyOrders.Models
 
         public int CPM154 { get; set; }
 
-        public int S90V { get; set; }
+        public int CPMS90V { get; set; }
 
         public int _12C27 { get; set; }
 
