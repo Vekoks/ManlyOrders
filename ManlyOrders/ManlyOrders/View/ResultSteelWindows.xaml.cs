@@ -35,15 +35,18 @@ namespace ManlyOrders.View
 
                 if (listKnife[i].OneHand)
                 {
-                    currentLine = listKnife[i].Name + " ONE HAND" + " ".PadRight(9) + listKnife[i].D2 + "<-D2" + " ".PadRight(7) + listKnife[i].CPM154 + "<-CPM154" + " ".PadRight(7) + listKnife[i].CPMS90V + "<-CPMS90V" + " ".PadRight(7) + listKnife[i]._12C27 + "<-12C27" + " ".PadRight(7) + listKnife[i]._14C28 + "<-14C28";
+                    currentLine = listKnife[i].Name + " ONE HAND" + " ".PadRight(9) + "D2->" + listKnife[i].D2 + " ".PadRight(7) + "CPM154->" + listKnife[i].CPM154 + 
+                        " ".PadRight(7) + "CPMS90V->" + listKnife[i].CPMS90V + " ".PadRight(7) + "12C27->" + listKnife[i]._12C27 + " ".PadRight(7) + "14C28->" + listKnife[i]._14C28 ;
                 }
                 else if (listKnife[i].TwoHand)
                 {
-                    currentLine = listKnife[i].Name + " TWO HAND" + " ".PadRight(6) + listKnife[i].D2 + "<-D2" + " ".PadRight(7) + listKnife[i].CPM154 + "<-CPM154" + " ".PadRight(7) + listKnife[i].CPMS90V + "<-CPMS90V" + " ".PadRight(7) + listKnife[i]._12C27 + "<-12C27" + " ".PadRight(7) + listKnife[i]._14C28 + "<-14C28";
+                    currentLine = listKnife[i].Name + " TWO HAND" + " ".PadRight(6) + "D2->" + listKnife[i].D2 + " ".PadRight(7) + "CPM154->" + listKnife[i].CPM154 + 
+                        " ".PadRight(7) + "CPMS90V->" +listKnife[i].CPMS90V + " ".PadRight(7) + "12C27->" + listKnife[i]._12C27 + " ".PadRight(7) + "14C28->" +listKnife[i]._14C28;
                 }
                 else
                 {
-                    currentLine = listKnife[i].Name + " ".PadRight(10) + listKnife[i].D2 + "<-D2" + " ".PadRight(10) + listKnife[i].CPM154 + "<-CPM154" + " ".PadRight(10) + listKnife[i].CPMS90V + "<-CPMS90V" + " ".PadRight(10) + listKnife[i]._12C27 + "<-12C27" + " ".PadRight(10) + listKnife[i]._14C28 + "<-14C28";
+                    currentLine = listKnife[i].Name + " ".PadRight(10) + "D2->" +listKnife[i].D2 + " ".PadRight(10) + "CPM154->" + listKnife[i].CPM154 + 
+                        " ".PadRight(10) + "CPMS90V->" + listKnife[i].CPMS90V + " ".PadRight(10) + "12C27->" + listKnife[i]._12C27 + " ".PadRight(10) + "14C28->" + listKnife[i]._14C28;
                 }
 
                 listBoxKnifeSteel.Items.Add(currentLine);
