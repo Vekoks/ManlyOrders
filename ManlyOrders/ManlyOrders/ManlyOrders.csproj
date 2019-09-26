@@ -71,6 +71,7 @@
     <Compile Include="Models\Knife.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Recording.cs" />
+    <Compile Include="Service\OrderFileService.cs" />
     <Compile Include="View\ResultHandleWindow.xaml.cs">
       <DependentUpon>ResultHandleWindow.xaml</DependentUpon>
     </Compile>

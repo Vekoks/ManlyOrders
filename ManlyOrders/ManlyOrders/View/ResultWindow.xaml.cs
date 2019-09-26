@@ -39,7 +39,7 @@ namespace ManlyOrders
 
         private void buttonSaveFile_Click(object sender, RoutedEventArgs e)
         {
-            OrderService.SaveRecord(listRecord);
+            OrderFileService.SaveRecord(listRecord);
         }
     }
 }
