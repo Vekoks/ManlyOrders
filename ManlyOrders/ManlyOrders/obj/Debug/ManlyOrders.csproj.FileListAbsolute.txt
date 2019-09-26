@@ -67,3 +67,4 @@ D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\ResultSteelWindows.
 D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\ResultSteelWindows.baml
 D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\ResultHandleWindow.g.cs
 D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\View\ResultHandleWindow.baml
+D:\GitHub\ManlyOrders\ManlyOrders\ManlyOrders\obj\Debug\ManlyOrders.csprojResolveAssemblyReference.cache

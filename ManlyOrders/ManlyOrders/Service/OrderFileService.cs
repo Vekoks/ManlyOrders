@@ -82,7 +82,7 @@ namespace ManlyOrders.Service
 
             graph.DrawString("Поръчка стомана", font, XBrushes.Black, new XRect(0, 0, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
 
-            for (int i = 0, j = 2; i < listKnife.Count; i++, j += 2)
+            for (int i = 0, j = 2; i < 100; i++, j += 2)
             {
                 var currentLine = "";
 
@@ -101,10 +101,10 @@ namespace ManlyOrders.Service
                     currentLine = listKnife[i].Name + " ".PadRight(7) + "D2->" + listKnife[i].D2 + " ".PadRight(10) + "CPM154->" + listKnife[i].CPM154 +
                         " ".PadRight(10) + "CPMS90V->" + listKnife[i].CPMS90V + " ".PadRight(10) + "12C27->" + listKnife[i]._12C27 + " ".PadRight(10) + "14C28->" + listKnife[i]._14C28;
                 }
-
+                  
                 var numberLine = j * 12;
 
-                if (numberLine / 648 == 1)
+                if (numberLine / 768 == 1)
                 {
                     pdfPage = pdf.AddPage();
                     graph = XGraphics.FromPdfPage(pdfPage);
@@ -113,7 +113,7 @@ namespace ManlyOrders.Service
                     numberLine = j * 12;
                 }
 
-                graph.DrawString(currentLine, font, XBrushes.Black, new XRect(0, numberLine, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                graph.DrawString(i.ToString(), font, XBrushes.Black, new XRect(0, numberLine, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 currentLine = new string('-', 110);
 
@@ -156,7 +156,7 @@ namespace ManlyOrders.Service
 
                 var numberLine = j * 12;
 
-                if (numberLine / 648 == 1)
+                if (numberLine / 768 == 1)
                 {
                     pdfPage = pdf.AddPage();
                     graph = XGraphics.FromPdfPage(pdfPage);
