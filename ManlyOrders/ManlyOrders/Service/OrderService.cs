@@ -262,7 +262,7 @@ namespace ManlyOrders.Service
 
                 listStringForView.Add(currentLine);
 
-                currentLine = new string('-', 40);
+                currentLine = new string('-', 110);
 
                 listStringForView.Add(currentLine);
             }
@@ -278,8 +278,8 @@ namespace ManlyOrders.Service
             {
                 switch (record[i])
                 {
-                    case "MILITARY": return "MILITARY GREEN";
-                    case "DESERT": return "DESERT IRONWOOD";
+                    case "MILITARY": return "MILITARY " + record[i + 1];
+                    case "DESERT": return "DESERT " + record[i + 1];
                     default:
                         break;
                 }

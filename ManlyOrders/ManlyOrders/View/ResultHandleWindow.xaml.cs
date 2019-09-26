@@ -23,18 +23,25 @@ namespace ManlyOrders.View
     {
         private List<Handle> listHandle;
 
+        private List<string> listStringForView;
+
         public ResultHandleWindow(List<Recording> listRecording)
         {
             InitializeComponent();
 
             listHandle = OrderService.GetHandles(listRecording);
 
-            var listStringForView =  OrderService.GetHandlesReadyForView(listHandle);
+            listStringForView =  OrderService.GetHandlesReadyForView(listHandle);
 
             for (int i = 0; i < listStringForView.Count(); i++)
             {
                 listBoxHandles.Items.Add(listStringForView[i]);
             }
+        }
+
+        private void buttonSaveFile_Click(object sender, RoutedEventArgs e)
+        {
+            OrderFileService.SaveHandles(listStringForView);
         }
     }
 }

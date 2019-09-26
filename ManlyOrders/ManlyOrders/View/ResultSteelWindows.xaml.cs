@@ -59,7 +59,7 @@ namespace ManlyOrders.View
 
         private void buttonSaveFile_Click(object sender, RoutedEventArgs e)
         {
-
+            OrderFileService.SaveSteels(listKnife);
         }
     }
 }
