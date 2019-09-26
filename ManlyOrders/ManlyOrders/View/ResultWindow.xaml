@@ -13,7 +13,7 @@
         </Grid.Background>
 
         <ListBox x:Name="listBoxItams" HorizontalAlignment="Left" Height="228" Margin="29,40,0,0" VerticalAlignment="Top" Width="334"/>
-        <Button x:Name="buttonSaveFile" Content="Запиши" HorizontalAlignment="Left" Margin="159,280,0,0" VerticalAlignment="Top" Width="75" Click="buttonSaveFile_Click"/>
+        <Button x:Name="buttonSaveFile" Content="Запиши" HorizontalAlignment="Left" Margin="159,275,0,0" VerticalAlignment="Top" Width="75" Click="buttonSaveFile_Click"/>
         <Label x:Name="labelResult" Content="Цялата поръчка" HorizontalAlignment="Left" Margin="135,9,0,0" VerticalAlignment="Top" Background="#FFE8E8E8" FontSize="14"/>
 
     </Grid>

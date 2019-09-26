@@ -69,7 +69,8 @@ namespace ManlyOrders.Service
 
             if (kfineAndDetail == string.Empty)
             {
-                kfineAndDetail = barcode;
+                MessageBox.Show("Не съществува такъв нож");
+                return;
             }
 
             var addingOldRecording = true;
