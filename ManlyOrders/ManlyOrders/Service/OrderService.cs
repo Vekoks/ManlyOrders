@@ -29,12 +29,11 @@ namespace ManlyOrders.Service
 
             myFilePath += "Resources\\Codes.txt";
 
-            string[] informationFromFile = File.ReadAllLines(myFilePath);
-
+            var informationFromFile = File.ReadAllLines(myFilePath);
 
             var listOrders = new List<Order>();
 
-            for (int i = 0; i < informationFromFile.Length; i++)
+            for (int i = 0; i < informationFromFile.Count(); i++)
             {
                 var recordAllInfo = informationFromFile[i].Split('-');
 
@@ -49,12 +48,8 @@ namespace ManlyOrders.Service
             return listOrders;
         }
 
-        public static void SetRecord(List<Order> listOrder, List<Recording> listRecording, string barcode, string number)
+        public static void SetRecord(List<Order> listOrder, List<Recording> listRecording, string barcode, int number)
         {
-            int numberCurrentOrder = 0;
-
-            int.TryParse(number, out numberCurrentOrder);
-
             var kfineAndDetail = "";
 
             for (int i = 0; i < listOrder.Count; i++)
@@ -79,7 +74,7 @@ namespace ManlyOrders.Service
             {
                 if (listRecording[i].Record.Equals(kfineAndDetail))
                 {
-                    listRecording[i].Number += numberCurrentOrder;
+                    listRecording[i].Number += number;
                     addingOldRecording = false;
                     break;
                 }
@@ -90,7 +85,7 @@ namespace ManlyOrders.Service
                 listRecording.Add(new Recording
                 {
                     Record = kfineAndDetail,
-                    Number = numberCurrentOrder
+                    Number = number
                 });
             }
         }

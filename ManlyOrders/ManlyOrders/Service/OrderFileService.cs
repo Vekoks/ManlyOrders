@@ -4,6 +4,7 @@ using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -101,7 +102,7 @@ namespace ManlyOrders.Service
                     currentLine = listKnife[i].Name + " ".PadRight(7) + "D2->" + listKnife[i].D2 + " ".PadRight(10) + "CPM154->" + listKnife[i].CPM154 +
                         " ".PadRight(10) + "CPMS90V->" + listKnife[i].CPMS90V + " ".PadRight(10) + "12C27->" + listKnife[i]._12C27 + " ".PadRight(10) + "14C28->" + listKnife[i]._14C28;
                 }
-                  
+
                 var numberLine = j * 12;
 
                 if (numberLine / 768 == 1)
@@ -194,7 +195,7 @@ namespace ManlyOrders.Service
                             numberLine = j * 12;
 
                             graph.DrawString(currentLineSplit[k], font, XBrushes.Black, new XRect(0, numberLine, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
-                        }   
+                        }
                     }
                 }
                 else
@@ -206,6 +207,48 @@ namespace ManlyOrders.Service
             pdf.Save(fileNameAndPath);
 
             MessageBox.Show("Успешен запис на файл");
+        }
+
+        public static void SaveNewModelKnife(string barcode, string modelKnife)
+        {
+            var barcodeUp = barcode.ToUpper();
+
+            var modelKnifeUP = modelKnife.ToUpper();
+
+            string filePath = Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory);
+
+            var filePathSplit = filePath.Split('\\');
+
+            var myFilePath = "";
+
+            for (int i = 0; i < filePathSplit.Length - 2; i++)
+            {
+                myFilePath += filePathSplit[i] + "\\";
+            }
+
+            myFilePath += "Resources\\Codes.txt";
+
+            string[] informationFromFile = File.ReadAllLines(myFilePath);
+
+            try
+            {
+                StreamWriter sw = new StreamWriter(myFilePath);
+
+                for (int i = 0; i < informationFromFile.Count(); i++)
+                {
+                    sw.WriteLine(informationFromFile[i]);
+                }
+
+                sw.WriteLine(barcodeUp + "-" + modelKnifeUP);
+
+                sw.Close();
+            }
+            catch (Exception e)
+            {
+                var error = e.Message;
+            }
+
+            MessageBox.Show("Успешено добавяне на нов модел нож");
         }
     }
 }

@@ -72,6 +72,9 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Recording.cs" />
     <Compile Include="Service\OrderFileService.cs" />
+    <Compile Include="View\NewModelKnifeWindow.xaml.cs">
+      <DependentUpon>NewModelKnifeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ResultHandleWindow.xaml.cs">
       <DependentUpon>ResultHandleWindow.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\NewModelKnifeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ResultHandleWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -50,7 +50,17 @@ namespace ManlyOrders
                 return;
             }
 
-            OrderService.SetRecord(listOrderFromFile, listRecording, barcode, number);
+            int numberCurrentOrder = 0;
+
+            int.TryParse(number, out numberCurrentOrder);
+
+            if (numberCurrentOrder == 0)
+            {
+                MessageBox.Show("Не сте въвели правилно число");
+                return;
+            }
+
+            OrderService.SetRecord(listOrderFromFile, listRecording, barcode, numberCurrentOrder);
 
             textBoxBarcode.Text = "";
 
@@ -59,10 +69,6 @@ namespace ManlyOrders
 
         private void buttonResult_Click(object sender, RoutedEventArgs e)
         {
-            OrderService.GetHandles(listRecording);
-
-            //OrderService.GetSteels(listRecording);
-
             var resultWindow = new ResultWindow(listRecording);
             resultWindow.Show();
         }
@@ -89,6 +95,12 @@ namespace ManlyOrders
         {
             var resultWindow = new ResultSteelWindows(listRecording);
             resultWindow.Show();
+        }
+
+        private void buttonAddNewknife_Click(object sender, RoutedEventArgs e)
+        {
+            var newModelKnifetWindow = new NewModelKnifeWindow();
+            newModelKnifetWindow.Show();
         }
     }
 }
