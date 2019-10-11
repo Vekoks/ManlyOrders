@@ -83,7 +83,7 @@ namespace ManlyOrders.Service
 
             graph.DrawString("Поръчка стомана", font, XBrushes.Black, new XRect(0, 0, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopCenter);
 
-            for (int i = 0, j = 2; i < 100; i++, j += 2)
+            for (int i = 0, j = 2; i < listKnife.Count; i++, j += 2)
             {
                 var currentLine = "";
 
@@ -114,7 +114,7 @@ namespace ManlyOrders.Service
                     numberLine = j * 12;
                 }
 
-                graph.DrawString(i.ToString(), font, XBrushes.Black, new XRect(0, numberLine, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
+                graph.DrawString(currentLine, font, XBrushes.Black, new XRect(0, numberLine, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft);
 
                 currentLine = new string('-', 110);
 
