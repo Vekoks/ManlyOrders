@@ -33,13 +33,14 @@ namespace ManlyOrders
         {
             InitializeComponent();
 
-            listOrderFromFile = OrderService.GetRecords();
-
+            listOrderFromFile = new List<Order>();
             listRecording = new List<Recording>();
         }
 
         private void buttonAdd_Click(object sender, RoutedEventArgs e)
         {
+            listOrderFromFile = OrderService.GetRecords();
+
             var barcode = textBoxBarcode.Text.ToUpper();
 
             var number = textBoxNumber.Text;

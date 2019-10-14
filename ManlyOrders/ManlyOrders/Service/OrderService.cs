@@ -42,7 +42,7 @@ namespace ManlyOrders.Service
                 currentOrder.Barcode = recordAllInfo[0];
                 currentOrder.Detail = recordAllInfo[1];
 
-                listOrders.Add(currentOrder);
+                listOrders.Add(currentOrder); 
             }
 
             return listOrders;
